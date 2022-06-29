@@ -1,0 +1,99 @@
+/*
+ * File:   splitter_v1.c
+ * Author: user
+ *
+ * Created on June 25, 2022, 9:13 PM
+ */
+
+
+#include <xc.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h> 
+
+/**CONFIGURATION BITS**/
+
+// PIC16F1823 Configuration Bit Settings
+
+// 'C' source line config statements
+
+// CONFIG1
+// 'C' source line config statements
+
+// CONFIG1
+#pragma config FOSC = INTOSC    // Oscillator Selection (INTOSC oscillator: I/O function on CLKIN pin)
+#pragma config WDTE = OFF        // Watchdog Timer Enable (WDT enabled)
+#pragma config PWRTE = OFF      // Power-up Timer Enable (PWRT disabled)
+#pragma config MCLRE = ON       // MCLR Pin Function Select (MCLR/VPP pin function is MCLR)
+#pragma config CP = OFF         // Flash Program Memory Code Protection (Program memory code protection is disabled)
+#pragma config CPD = OFF        // Data Memory Code Protection (Data memory code protection is disabled)
+#pragma config BOREN = OFF       // Brown-out Reset Enable (Brown-out Reset enabled)
+#pragma config CLKOUTEN = OFF   // Clock Out Enable (CLKOUT function is disabled. I/O or oscillator function on the CLKOUT pin)
+#pragma config IESO = ON        // Internal/External Switchover (Internal/External Switchover mode is enabled)
+#pragma config FCMEN = ON       // Fail-Safe Clock Monitor Enable (Fail-Safe Clock Monitor is enabled)
+
+// CONFIG2
+#pragma config WRT = OFF        // Flash Memory Self-Write Protection (Write protection off)
+#pragma config PLLEN = ON       // PLL Enable (4x PLL enabled)
+#pragma config STVREN = ON      // Stack Overflow/Underflow Reset Enable (Stack Overflow or Underflow will cause a Reset)
+#pragma config BORV = LO        // Brown-out Reset Voltage Selection (Brown-out Reset Voltage (Vbor), low trip point selected.)
+#pragma config LVP = OFF        // Low-Voltage Programming Enable (High-voltage on MCLR/VPP must be used for programming)
+
+// #pragma config statements should precede project file includes.
+// Use project enums instead of #define for ON and OFF.
+
+//FOSC
+#define _XTAL_FREQ 16000000 //16MHz                  // Fosc  frequency for _delay()  library
+// #pragma config statements should precede project file includes.
+// Use project enums instead of #define for ON and
+////*****END OF CONFIGURATION BITS******///
+
+//WE LL USE TIMER INTERRUPT
+#define switch RA5
+unsigned int Count = 0;
+void main(void) {
+    //clock source and frequency setting
+   // OSCCON |=0b01111000; //16MHZ INTERNAL CLOCK
+    //port 
+    PORTA=0x00; //clear port a data
+    OSCCON = 0b11111010;
+    
+    TMR0 = 0;
+    // OPTION_REG = 0b11000111;
+    
+    //TMR0IE = 1;
+    TMR0IF = 0;
+    GIE=1;
+    //TRISA5 = 0; //RB0 as Output PIN
+    //TRISA4 = 0; //RB0 as Output PIN
+    //RA4 = 0;
+    //RA5=0;
+    
+    TRISAbits.TRISA5 = 0; // set pin as output
+    while(1)
+    {
+       
+       //LATA |= (1<<5);
+       // for(int i = 0; i<100000; i++){}
+        //RA5=1;
+        //__delay_ms(1000);
+      //LATA &= (1<<5);
+      //for(int i = 0; i<100000; i++){}
+      //RA5=0;
+       //__delay_ms(1000);
+       
+        //PORTAbits.RA5 = 1; // set pin LOW
+          
+       //__delay_ms(1000);     // wait 0.5 seconds
+       // PORTA= 0x00;
+        //PORTAbits.RA5 = 0; // set pin HIGH
+        PORTA = 0x00;
+         __delay_ms(1000); //Delay of 1 sec
+        PORTA = 0xFF;
+        //PORTA= 0xFF;
+         __delay_ms(1000);//wait_ms(500);       // wait 0.5 seconds
+    }
+    return;
+}
+
+//interrupt isr
