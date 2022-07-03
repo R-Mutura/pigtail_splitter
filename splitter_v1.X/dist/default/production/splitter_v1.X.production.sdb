@@ -11,7 +11,7 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"72 C:\Users\user\Documents\FIRMWARE_PROJECTS\MPLAB_PROJECTS\splitter_v1.X\splitter_v1.c
+"72 C:\Users\user\Documents\FIRMWARE_PROJECTS\MPLAB_PROJECTS\pigtail_splitter\splitter_v1.X\splitter_v1.c
 [v _main main `(v  1 e 1 0 ]
 "88
 [v _splitter splitter `(v  1 e 1 0 ]
@@ -27,7 +27,7 @@
 "1506
 [u S30 . 1 `S23 1 . 1 0 ]
 [v _TRISAbits TRISAbits `VES30  1 e 1 @140 ]
-"72 C:\Users\user\Documents\FIRMWARE_PROJECTS\MPLAB_PROJECTS\splitter_v1.X\splitter_v1.c
+"72 C:\Users\user\Documents\FIRMWARE_PROJECTS\MPLAB_PROJECTS\pigtail_splitter\splitter_v1.X\splitter_v1.c
 [v _main main `(v  1 e 1 0 ]
 {
 "86
@@ -35,5 +35,5 @@
 "88
 [v _splitter splitter `(v  1 e 1 0 ]
 {
-"95
+"98
 } 0

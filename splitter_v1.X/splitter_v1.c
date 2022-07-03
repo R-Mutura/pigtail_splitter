@@ -89,7 +89,11 @@ void splitter ()
 {
    
         PORTA = 0x00;
-        __delay_us(strip_2); //wait for this period before switching to strip 2
+        
+        __delay_us(1000600);
+        //__delay_us(strip_1); //wait for this period before switching to strip 2
         PORTA = 0xFF;
-        __delay_us(strip_2);//wait for this period before switching back to strip 1
+         __delay_us(6003600);
+        //__delay_us(1000000);
+        //__delay_us(strip_2);//wait for this period before switching back to strip 1
 }

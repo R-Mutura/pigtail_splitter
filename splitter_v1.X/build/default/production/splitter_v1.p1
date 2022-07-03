@@ -485,15 +485,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;splitter_v1.c: 91:         PORTA = 0x00;
 [e = _PORTA -> -> 0 `i `uc ]
 "92
-[; ;splitter_v1.c: 92:         _delay((unsigned long)((strip_2)*(16000000/4000000.0)));
-[e ( __delay (1 -> * -> _strip_2 `d / -> -> 16000000 `l `d .4000000.0 `ul ]
-"93
-[; ;splitter_v1.c: 93:         PORTA = 0xFF;
-[e = _PORTA -> -> 255 `i `uc ]
+[; ;splitter_v1.c: 92:         _delay((unsigned long)((1000)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
 "94
-[; ;splitter_v1.c: 94:         _delay((unsigned long)((strip_2)*(16000000/4000000.0)));
-[e ( __delay (1 -> * -> _strip_2 `d / -> -> 16000000 `l `d .4000000.0 `ul ]
+[; ;splitter_v1.c: 94:         PORTA = 0xFF;
+[e = _PORTA -> -> 255 `i `uc ]
 "95
-[; ;splitter_v1.c: 95: }
+[; ;splitter_v1.c: 95:         _delay((unsigned long)((6000)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 6000 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"98
+[; ;splitter_v1.c: 98: }
 [e :UE 304 ]
 }

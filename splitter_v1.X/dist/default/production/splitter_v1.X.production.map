@@ -5,9 +5,9 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.36\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\splitter_v1.X.production.sym \
   --cmf=dist/default/production\splitter_v1.X.production.cmf -z -Q16F1823 \
-  -oC:\Users\user\AppData\Local\Temp\xcAsdgg.4 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\user\AppData\Local\Temp\xcAsbq0.4 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/splitter_v1.X.production.map \
-  --md=C:\Users\user\AppData\Local\Temp\xcAsdgg.dat -E1 -ver=XC8 Compiler \
+  --md=C:\Users\user\AppData\Local\Temp\xcAsbq0.dat -E1 -ver=XC8 Compiler \
   --acfsm=1493 -ACODE=00h-07FFh -ASTRCODE=00h-07FFh -ASTRING=00h-0FFhx8 \
   -ACONST=00h-0FFhx8 -AENTRY=00h-0FFhx8 -ACOMMON=070h-07Fh \
   -ABANK0=020h-06Fh -ABANK1=0A0h-0BFh -ABIGRAM=02000h-0206Fh \
@@ -26,7 +26,7 @@ Linker command line:
   -AEEDATA=00h-0FFh/0F000h -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 \
   -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 \
   -preset_vec=00h,intentry,init,end_init -ppowerup=CODE -pcinit=CODE \
-  -pfunctab=ENTRY -k C:\Users\user\AppData\Local\Temp\xcAsdgg.o \
+  -pfunctab=ENTRY -k C:\Users\user\AppData\Local\Temp\xcAsbq0.o \
   dist/default/production\splitter_v1.X.production.o 
 
 Object code version is 3.11
@@ -36,31 +36,31 @@ Machine type is 16F1823
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\user\AppData\Local\Temp\xcAsdgg.o
+C:\Users\user\AppData\Local\Temp\xcAsbq0.o
                 end_init                              1        1        1        0       0
                 reset_vec                             0        0        1        0       0
                 config                             8007     8007        2        0       4
 dist/default/production\splitter_v1.X.production.o
                 cinit                               7FC      7FC        4      FF8       0
                 config                             8007     8007        2        0       4
-                text1                               7E6      7E6       16      FCC       0
-                maintext                            7DD      7DD        9      FBA       0
-                cstackCOMMON                         72       72        1       70       1
+                text1                               7DF      7DF       1D      FBE       0
+                maintext                            7D6      7D6        9      FAC       0
+                cstackCOMMON                         72       72        2       70       1
                 bssCOMMON                            70       70        2       70       1
-                stringtext2                         7D9      7D9        2      FB2       0
-                stringtext1                         7DB      7DB        2      FB6       0
+                stringtext2                         7D2      7D2        2      FA4       0
+                stringtext1                         7D4      7D4        2      FA8       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   CODE           
                 end_init                              1        1        1         0
                 cinit                               7FC      7FC        4         0
                 reset_vec                             0        0        1         0
-                text1                               7E6      7E6       16         0
-                maintext                            7DD      7DD        9         0
+                text1                               7DF      7DF       1D         0
+                maintext                            7D6      7D6        9         0
 
         CLASS   STRCODE        
-                stringtext2                         7D9      7D9        2         0
-                stringtext1                         7DB      7DB        2         0
+                stringtext2                         7D2      7D2        2         0
+                stringtext1                         7D4      7D4        2         0
 
         CLASS   STRING         
 
@@ -69,7 +69,7 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   ENTRY          
 
         CLASS   COMMON         
-                cstackCOMMON                         72       72        1         1
+                cstackCOMMON                         72       72        2         1
                 bssCOMMON                            70       70        2         1
 
         CLASS   BANK0          
@@ -223,11 +223,11 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
 
                 reset_vec                      000000  000002  000002         0       0  CODE        2
-                bssCOMMON                      000070  000003  000073        70       1  COMMON      1
-                stringtext2                    0007D9  000002  0007DB       FB2       0  STRCODE     2
-                stringtext1                    0007DB  000002  0007DD       FB6       0  STRCODE     2
-                maintext                       0007DD  000009  0007E6       FBA       0  CODE        2
-                text1                          0007E6  000016  0007FC       FCC       0  CODE        2
+                bssCOMMON                      000070  000004  000074        70       1  COMMON      1
+                stringtext2                    0007D2  000002  0007D4       FA4       0  STRCODE     2
+                stringtext1                    0007D4  000002  0007D6       FA8       0  STRCODE     2
+                maintext                       0007D6  000009  0007DF       FAC       0  CODE        2
+                text1                          0007DF  00001D  0007FC       FBE       0  CODE        2
                 cinit                          0007FC  000004  000800       FF8       0  CODE        2
 
 
@@ -237,11 +237,11 @@ UNUSED ADDRESS RANGES
         BANK0            00020-0006F              50           1
         BANK1            000A0-000BF              20           1
         BIGRAM           02000-0206F              70           1
-        CODE             00002-007D8             7D7           2
-        COMMON           00073-0007D               B           1
-        CONST            00002-007D8             100           2
+        CODE             00002-007D1             7D0           2
+        COMMON           00074-0007D               A           1
+        CONST            00002-007D1             100           2
         EEDATA           0F000-0F0FF             100           2
-        ENTRY            00002-007D8             100           2
+        ENTRY            00002-007D1             100           2
         IDLOC            08000-08003               4           2
         RAM              00020-0006F              50           1
                          000A0-000BF              20
@@ -277,8 +277,8 @@ UNUSED ADDRESS RANGES
         SFR7             00380-003EF              70           1
         SFR8             00400-0046F              70           1
         SFR9             00480-004EF              70           1
-        STRCODE          00002-007D8             7D7           2
-        STRING           00002-007D8             100           2
+        STRCODE          00002-007D1             7D0           2
+        STRING           00002-007D1             100           2
 
                                   Symbol Table
 
@@ -368,7 +368,7 @@ __Hsfr7                  sfr7         00000
 __Hsfr8                  sfr8         00000
 __Hsfr9                  sfr9         00000
 __Hspace_0               (abs)        00800
-__Hspace_1               (abs)        00073
+__Hspace_1               (abs)        00074
 __Hspace_2               (abs)        00000
 __Hspace_3               (abs)        00000
 __Hspace_4               (abs)        10010
@@ -471,7 +471,7 @@ __Lstringtext1           stringtext1  00000
 __Lstringtext2           stringtext2  00000
 __Ltext                  text         00000
 __S0                     (abs)        00800
-__S1                     (abs)        00073
+__S1                     (abs)        00074
 __S3                     (abs)        00000
 ___heap_hi               (abs)        00000
 ___heap_lo               (abs)        00000
@@ -481,19 +481,19 @@ ___sp                    stack        00000
 ___stackhi               (abs)        00000
 ___stacklo               (abs)        00000
 __end_of__initialization cinit        007FE
-__end_of_main            maintext     007E6
+__end_of_main            maintext     007DF
 __end_of_splitter        text1        007FC
-__end_of_strip_1         stringtext1  007DD
-__end_of_strip_2         stringtext2  007DB
+__end_of_strip_1         stringtext2  007D4
+__end_of_strip_2         stringtext1  007D6
 __initialization         cinit        007FC
 __pbssCOMMON             bssCOMMON    00070
 __pcstackCOMMON          cstackCOMMON 00072
-__pmaintext              maintext     007DD
-__pstringtext1           stringtext1  007DB
-__pstringtext2           stringtext2  007D9
-__ptext1                 text1        007E6
-_main                    maintext     007DD
-_splitter                text1        007E6
+__pmaintext              maintext     007D6
+__pstringtext1           stringtext1  007D4
+__pstringtext2           stringtext2  007D2
+__ptext1                 text1        007DF
+_main                    maintext     007D6
+_splitter                text1        007DF
 btemp                    (abs)        0007E
 end_of_initialization    cinit        007FE
 intlevel0                functab      00000
@@ -512,10 +512,10 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 splitter_v1.c
-		_main          		CODE           	07DD	0000	9
-		_splitter      		CODE           	07E6	0000	22
+		_main          		CODE           	07D6	0000	9
+		_splitter      		CODE           	07DF	0000	29
 
-splitter_v1.c estimated size: 31
+splitter_v1.c estimated size: 38
 
 shared
 		_strip_2       		STRCODE        	0000	0000	0

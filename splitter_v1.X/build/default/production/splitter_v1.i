@@ -4058,7 +4058,10 @@ void splitter ()
 {
 
         PORTA = 0x00;
-        _delay((unsigned long)((strip_2)*(16000000/4000000.0)));
+        _delay((unsigned long)((1000)*(16000000/4000.0)));
+
         PORTA = 0xFF;
-        _delay((unsigned long)((strip_2)*(16000000/4000000.0)));
+        _delay((unsigned long)((6000)*(16000000/4000.0)));
+
+
 }
