@@ -9,10 +9,10 @@
 ### Memory Usage ###
  Intel Hex-file ranges:
   0h - 3h		(dist/default/production\splitter_v1.X.production.hex)
-  FA4h - FFFh		(dist/default/production\splitter_v1.X.production.hex)
+  F4Eh - FFFh		(dist/default/production\splitter_v1.X.production.hex)
   1000Eh - 10011h		(dist/default/production\splitter_v1.X.production.hex)
  Unused ranges:
-  4h - FA3h
+  4h - F4Dh
   1000h - 1000Dh
 
 ### Hex Memory Map ###
@@ -24,7 +24,13 @@
 ----------------------------------------------------------
 00000000 | H1 H1 H1 H1 -- -- -- -- -- -- -- -- -- -- -- --
 ----------------------------------------------------------
-00000FA0 | -- -- -- -- H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000F40 | -- -- -- -- -- -- -- -- -- -- -- -- -- -- H1 H1
+00000F50 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000F60 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000F70 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000F80 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000F90 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000FA0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000FB0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000FC0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000FD0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1

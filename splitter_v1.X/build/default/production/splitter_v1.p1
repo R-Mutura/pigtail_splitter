@@ -1,6 +1,50 @@
 Version 4.0 HI-TECH Software Intermediate Code
+"5911 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1823.h
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1823.h: 5911: extern volatile __bit CCP1IF __attribute__((address(0x8A)));
+[v _CCP1IF `Vb ~T0 @X0 0 e@138 ]
+"1058
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1823.h: 1058: extern volatile unsigned char TMR0 __attribute__((address(0x015)));
+[v _TMR0 `Vuc ~T0 @X0 0 e@21 ]
 [p mainexit ]
-"429 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1823.h
+"1547
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1823.h: 1547:     struct {
+[s S84 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S84 . TRISC0 TRISC1 TRISC2 TRISC3 TRISC4 TRISC5 ]
+"1546
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1823.h: 1546: typedef union {
+[u S83 `S84 1 ]
+[n S83 . . ]
+"1556
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1823.h: 1556: extern volatile TRISCbits_t TRISCbits __attribute__((address(0x08E)));
+[v _TRISCbits `VS83 ~T0 @X0 0 e@142 ]
+"2995
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1823.h: 2995: extern volatile unsigned char APFCON __attribute__((address(0x11D)));
+[v _APFCON `Vuc ~T0 @X0 0 e@285 ]
+"4564
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1823.h: 4564: extern volatile unsigned char CCP1CON __attribute__((address(0x293)));
+[v _CCP1CON `Vuc ~T0 @X0 0 e@659 ]
+"684
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1823.h: 684: extern volatile unsigned char PORTC __attribute__((address(0x00E)));
+[v _PORTC `Vuc ~T0 @X0 0 e@14 ]
+"1125
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1823.h: 1125: extern volatile unsigned char T1CON __attribute__((address(0x018)));
+[v _T1CON `Vuc ~T0 @X0 0 e@24 ]
+"1698
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1823.h: 1698: extern volatile unsigned char OPTION_REG __attribute__((address(0x095)));
+[v _OPTION_REG `Vuc ~T0 @X0 0 e@149 ]
+"6775
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1823.h: 6775: extern volatile __bit TMR0IE __attribute__((address(0x5D)));
+[v _TMR0IE `Vb ~T0 @X0 0 e@93 ]
+"6778
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1823.h: 6778: extern volatile __bit TMR0IF __attribute__((address(0x5A)));
+[v _TMR0IF `Vb ~T0 @X0 0 e@90 ]
+"351
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1823.h: 351: extern volatile unsigned char INTCON __attribute__((address(0x00B)));
+[v _INTCON `Vuc ~T0 @X0 0 e@11 ]
+"1591
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1823.h: 1591: extern volatile unsigned char PIE1 __attribute__((address(0x091)));
+[v _PIE1 `Vuc ~T0 @X0 0 e@145 ]
+"429
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1823.h: 429: extern volatile unsigned char PORTA __attribute__((address(0x00C)));
 [v _PORTA `Vuc ~T0 @X0 0 e@12 ]
 "1497
@@ -14,13 +58,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "1506
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1823.h: 1506: extern volatile TRISAbits_t TRISAbits __attribute__((address(0x08C)));
 [v _TRISAbits `VS81 ~T0 @X0 0 e@140 ]
-"70 splitter_v1.c
-[; ;splitter_v1.c: 70:   void splitter ();
-[v _splitter `(v ~T0 @X0 0 e? ]
-[v F2130 `(v ~T0 @X0 1 tf1`ul ]
-"92 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\pic.h
-[v __delay `JF2130 ~T0 @X0 0 e ]
-[p i __delay ]
 "54 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1823.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1823.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -426,74 +463,167 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _Count
 -> -> 0 `i `ui
 ]
+"55
+[; ;splitter_v1.c: 55: long bit_count = 0;
+[v _bit_count `l ~T0 @X0 1 e ]
+[i _bit_count
+-> -> 0 `i `l
+]
 "67
-[; ;splitter_v1.c: 67:   const int strip_1 = 300;
-[v _strip_1 `Ci ~T0 @X0 1 e ]
-[i _strip_1
--> 300 `i
+[; ;splitter_v1.c: 67:   int Bit_number = 24000 ;
+[v _Bit_number `i ~T0 @X0 1 e ]
+[i _Bit_number
+-> 24000 `i
 ]
-"68
-[; ;splitter_v1.c: 68:   const int strip_2 = 1800;
-[v _strip_2 `Ci ~T0 @X0 1 e ]
-[i _strip_2
--> 1800 `i
-]
-[v $root$_main `(v ~T0 @X0 0 e ]
+"70
+[; ;splitter_v1.c: 70:   void capture_ISR()
+[v _capture_ISR `(v ~T0 @X0 1 ef ]
 "72
-[; ;splitter_v1.c: 72: void main(void) {
+[; ;splitter_v1.c: 72: {
+{
+[e :U _capture_ISR ]
+[f ]
+"74
+[; ;splitter_v1.c: 74:         if ( CCP1IF == 1)
+[e $ ! == -> _CCP1IF `i -> 1 `i 301  ]
+"75
+[; ;splitter_v1.c: 75:         {
+{
+"76
+[; ;splitter_v1.c: 76:             bit_count++;
+[e ++ _bit_count -> -> 1 `i `l ]
+"77
+[; ;splitter_v1.c: 77:              TMR0 = 50;
+[e = _TMR0 -> -> 50 `i `uc ]
+"78
+[; ;splitter_v1.c: 78:         }
+}
+[e $U 302  ]
+"79
+[; ;splitter_v1.c: 79:         else{
+[e :U 301 ]
+{
+"81
+[; ;splitter_v1.c: 81:         }
+}
+[e :U 302 ]
+"82
+[; ;splitter_v1.c: 82: }
+[e :UE 300 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"85
+[; ;splitter_v1.c: 85: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"76
-[; ;splitter_v1.c: 76:     PORTA=0x00;
-[e = _PORTA -> -> 0 `i `uc ]
-"78
-[; ;splitter_v1.c: 78:     TRISAbits.TRISA5 = 0;
-[e = . . _TRISAbits 0 5 -> -> 0 `i `uc ]
-"80
-[; ;splitter_v1.c: 80:     while(1)
-[e :U 302 ]
-"81
-[; ;splitter_v1.c: 81:     {
-{
-"83
-[; ;splitter_v1.c: 83:        splitter ();
-[e ( _splitter ..  ]
-"84
-[; ;splitter_v1.c: 84:     }
-}
-[e :U 301 ]
-[e $U 302  ]
-[e :U 303 ]
-"85
-[; ;splitter_v1.c: 85:     return;
-[e $UE 300  ]
-"86
-[; ;splitter_v1.c: 86: }
-[e :UE 300 ]
-}
-"88
-[; ;splitter_v1.c: 88: void splitter ()
-[v _splitter `(v ~T0 @X0 1 ef ]
-"89
-[; ;splitter_v1.c: 89: {
-{
-[e :U _splitter ]
-[f ]
+"90
+[; ;splitter_v1.c: 90:     TRISCbits.TRISC5 = 1;
+[e = . . _TRISCbits 0 5 -> -> 1 `i `uc ]
 "91
-[; ;splitter_v1.c: 91:         PORTA = 0x00;
-[e = _PORTA -> -> 0 `i `uc ]
+[; ;splitter_v1.c: 91:     APFCON = 0b00000001;
+[e = _APFCON -> -> 1 `i `uc ]
 "92
-[; ;splitter_v1.c: 92:         _delay((unsigned long)((1000)*(16000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-"94
-[; ;splitter_v1.c: 94:         PORTA = 0xFF;
+[; ;splitter_v1.c: 92:     CCP1CON = 0b00000101;
+[e = _CCP1CON -> -> 5 `i `uc ]
+"93
+[; ;splitter_v1.c: 93:     PORTC=0x00;
+[e = _PORTC -> -> 0 `i `uc ]
+"97
+[; ;splitter_v1.c: 97:     T1CON = 0b00110101;
+[e = _T1CON -> -> 53 `i `uc ]
+"99
+[; ;splitter_v1.c: 99:     CCP1IF =0;
+[e = _CCP1IF -> -> 0 `i `b ]
+"111
+[; ;splitter_v1.c: 111:    OPTION_REG = 0b01000000;
+[e = _OPTION_REG -> -> 64 `i `uc ]
+"112
+[; ;splitter_v1.c: 112:    TMR0IE = 1;
+[e = _TMR0IE -> -> 1 `i `b ]
+"113
+[; ;splitter_v1.c: 113:    TMR0IF = 0;
+[e = _TMR0IF -> -> 0 `i `b ]
+"115
+[; ;splitter_v1.c: 115:    TMR0 = 50;
+[e = _TMR0 -> -> 50 `i `uc ]
+"116
+[; ;splitter_v1.c: 116:    INTCON= 0b11000000;
+[e = _INTCON -> -> 192 `i `uc ]
+"118
+[; ;splitter_v1.c: 118:     PIE1 = 0b00000100;
+[e = _PIE1 -> -> 4 `i `uc ]
+"120
+[; ;splitter_v1.c: 120:     PORTA=0x00;
+[e = _PORTA -> -> 0 `i `uc ]
+"122
+[; ;splitter_v1.c: 122:     TRISAbits.TRISA5 = 0;
+[e = . . _TRISAbits 0 5 -> -> 0 `i `uc ]
+"123
+[; ;splitter_v1.c: 123:     PORTA = 0x00;
+[e = _PORTA -> -> 0 `i `uc ]
+"124
+[; ;splitter_v1.c: 124:      while(1)
+[e :U 305 ]
+"125
+[; ;splitter_v1.c: 125:     {
+{
+"127
+[; ;splitter_v1.c: 127:          if(bit_count >= Bit_number)
+[e $ ! >= _bit_count -> _Bit_number `l 307  ]
+"128
+[; ;splitter_v1.c: 128:          {
+{
+"129
+[; ;splitter_v1.c: 129:               PORTA = 0xFF;
 [e = _PORTA -> -> 255 `i `uc ]
-"95
-[; ;splitter_v1.c: 95:         _delay((unsigned long)((6000)*(16000000/4000.0)));
-[e ( __delay (1 -> * -> -> 6000 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-"98
-[; ;splitter_v1.c: 98: }
-[e :UE 304 ]
+"130
+[; ;splitter_v1.c: 130:          }
+}
+[e $U 308  ]
+"131
+[; ;splitter_v1.c: 131:          else
+[e :U 307 ]
+"132
+[; ;splitter_v1.c: 132:          {
+{
+"133
+[; ;splitter_v1.c: 133:              PORTA = 0x00;
+[e = _PORTA -> -> 0 `i `uc ]
+"134
+[; ;splitter_v1.c: 134:          }
+}
+[e :U 308 ]
+"135
+[; ;splitter_v1.c: 135:        if(TMR0IF)
+[e $ ! _TMR0IF 309  ]
+"136
+[; ;splitter_v1.c: 136:         {
+{
+"137
+[; ;splitter_v1.c: 137:         TMR0IF=0;
+[e = _TMR0IF -> -> 0 `i `b ]
+"138
+[; ;splitter_v1.c: 138:         TMR0 = 50;
+[e = _TMR0 -> -> 50 `i `uc ]
+"140
+[; ;splitter_v1.c: 140:         bit_count = 0;
+[e = _bit_count -> -> 0 `i `l ]
+"142
+[; ;splitter_v1.c: 142:         }
+}
+[e :U 309 ]
+"143
+[; ;splitter_v1.c: 143:      }
+}
+[e :U 304 ]
+[e $U 305  ]
+[e :U 306 ]
+"145
+[; ;splitter_v1.c: 145:     return;
+[e $UE 303  ]
+"146
+[; ;splitter_v1.c: 146: }
+[e :UE 303 ]
 }

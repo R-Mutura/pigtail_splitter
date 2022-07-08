@@ -12,7 +12,7 @@
 //#define CLOCK_PIN 13
 
 // Define the array of leds
-CRGB leds[NUM_LEDS_1];
+CRGB leds[NUM_LEDS];
 
 void setup() { 
     
@@ -29,7 +29,7 @@ void setup() {
     // FastLED.addLeds<UCS1903B, DATA_PIN, RGB>(leds, NUM_LEDS);
     // FastLED.addLeds<UCS1904, DATA_PIN, RGB>(leds, NUM_LEDS);
     // FastLED.addLeds<UCS2903, DATA_PIN, RGB>(leds, NUM_LEDS);
-     FastLED.addLeds<WS2812, DATA_PIN, GRB>(leds, NUM_LEDS_1);
+     FastLED.addLeds<WS2812, DATA_PIN, GRB>(leds, NUM_LEDS);
    //  FastLED.addLeds<WS2812, DATA_PIN, GRB>(leds, NUM_LEDS_2);// GRB ordering is typical
     // FastLED.addLeds<WS2852, DATA_PIN, RGB>(leds, NUM_LEDS);  // GRB ordering is typical
     // FastLED.addLeds<WS2812B, DATA_PIN, RGB>(leds, NUM_LEDS);  // GRB ordering is typical
@@ -62,36 +62,39 @@ void setup() {
 
 void loop() { 
   // Turn the LED on, then pause
-for(int i= 0; i<NUM_LEDS_1; i++){
+for(int i= 0; i<NUM_LEDS; i++){
     
   leds[i] = CRGB::Red;
   FastLED.show();
-  delay(100);
+   delay(100);
   // Now turn the LED off, then pause
   leds[i] = CRGB::Black;
+  
   FastLED.show();
-  delay(100);
+   delay(100);
+  
    }
- 
-for(int i= 0; i<NUM_LEDS_1; i++){
+ delay(100);
+for(int i= 0; i<NUM_LEDS; i++){
     
   leds[i] = CRGB::Blue;
   FastLED.show();
-  delay(100);
+   delay(100);
   // Now turn the LED off, then pause
   leds[i] = CRGB::Black;
   FastLED.show();
+   delay(100);
+  }
   delay(100);
-   }
-  
-for(int i= 0; i<NUM_LEDS_1; i++){
+for(int i= 0; i<NUM_LEDS; i++){
     
   leds[i] = CRGB::Green;
   FastLED.show();
-  delay(100);
+   delay(100);
   // Now turn the LED off, then pause
   leds[i] = CRGB::Black;
   FastLED.show();
-  delay(100);
-   }
+   delay(100);
+ }
+ delay(100);
 }

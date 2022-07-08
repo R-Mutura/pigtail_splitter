@@ -4032,36 +4032,75 @@ typedef uint32_t uint_fast32_t;
 #pragma config LVP = OFF
 # 54 "splitter_v1.c"
 unsigned int Count = 0;
+long bit_count = 0;
 # 67 "splitter_v1.c"
-  const int strip_1 = 300;
-  const int strip_2 = 1800;
-
+  int Bit_number = 24000 ;
   void splitter ();
+
+  void capture_ISR()
+
+{
+
+        if ( CCP1IF == 1)
+        {
+            bit_count++;
+             TMR0 = 50;
+        }
+        else{
+
+        }
+}
+
 
 void main(void) {
 
 
 
+
+    TRISCbits.TRISC5 = 1;
+    APFCON = 0b00000001;
+    CCP1CON = 0b00000101;
+    PORTC=0x00;
+
+
+
+    T1CON = 0b00110101;
+
+    CCP1IF =0;
+# 111 "splitter_v1.c"
+   OPTION_REG = 0b01000000;
+   TMR0IE = 1;
+   TMR0IF = 0;
+
+   TMR0 = 50;
+   INTCON= 0b11000000;
+
+    PIE1 = 0b00000100;
+
     PORTA=0x00;
 
     TRISAbits.TRISA5 = 0;
-
-    while(1)
+    PORTA = 0x00;
+     while(1)
     {
 
-       splitter ();
-    }
+         if(bit_count >= Bit_number)
+         {
+              PORTA = 0xFF;
+         }
+         else
+         {
+             PORTA = 0x00;
+         }
+       if(TMR0IF)
+        {
+        TMR0IF=0;
+        TMR0 = 50;
+
+        bit_count = 0;
+
+        }
+     }
+
     return;
-}
-
-void splitter ()
-{
-
-        PORTA = 0x00;
-        _delay((unsigned long)((1000)*(16000000/4000.0)));
-
-        PORTA = 0xFF;
-        _delay((unsigned long)((6000)*(16000000/4000.0)));
-
-
 }
